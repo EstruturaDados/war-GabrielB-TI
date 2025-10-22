@@ -34,3 +34,17 @@ int main() {
 
         printf("\n");
     }
+
+    printf("\n=== Estado Atual do Mapa ===\n");
+    printf("%-20s %-20s %-10s\n", "TERRITÓRIO", "COR DO EXÉRCITO", "TROPAS");
+    printf("-----------------------------------------------------------\n");
+
+    for (i = 0; i < TOTAL_TERRITORIOS; i++) {
+        printf("%-20s %-20s %-10d\n",
+               territorios[i].nome,
+               territorios[i].corExercito,
+               territorios[i].numTropas);
+    }
+
+    return 0;
+}
